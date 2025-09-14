@@ -1,0 +1,119 @@
+/*Página Inicial*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #FFFFFF;
+  color: #1C2434;
+}
+
+/*HEADER*/
+header {
+  background-color: #1C2434;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px; 
+}
+
+header > a > img {
+  height: 40px;
+  vertical-align: middle;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/*Estilo para o ícone do carrinho*/
+header nav a:nth-of-type(1) img {
+  height: 32px;
+  vertical-align: middle;
+}
+
+/*Estilo para o botão de Login*/
+header nav a:nth-of-type(2) {
+  background-color: #FFFFFF;
+  color: #1C2434;
+  padding: 8px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/*Estilo para o ícone de perfil*/
+header nav a:last-of-type img {
+  height: 40px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+/*GRID DE PRODUTOS*/
+main {
+  padding: 3rem 2.5rem;
+}
+
+main section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+main section article {
+  background-color: #E3E4EB;
+  border-radius: 16px;
+  width: 250px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+main section article figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section article figure > img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+}
+
+main section article figcaption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main section article figcaption span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+main section article figcaption button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+main section article figcaption button img {
+  width: 28px;
+  height: 28px;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1C2434;
+    height: 60px;
+}
